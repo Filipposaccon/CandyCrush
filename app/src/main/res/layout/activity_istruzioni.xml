@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondosistemato">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Istruzioni"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/obiettivo"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:lineHeight="15dp"
+        android:text="L'obiettivo del gioco è allineare 3 o più caramelle per fare i punti necessari per proseguire nei livellli successivi"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/allineamentosistemato" />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/obiettivo"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:lineHeight="18dp"
+        android:text="Questa è la moneta che permette di comprare i boost nel gioco, in base alle stelle conseguite nei livelli se ne possono guadagnare da una a 3 a livello"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/moneta" />
+    <TextView
+        android:id="@+id/TitoloBoost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Boost"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="310dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/TitoloBoost"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:lineHeight="18dp"
+        android:text="Scuotendo il telefono per un secondo la tavola delle caramelle verrà aggiornata al costo di 3 mosse e in omaggio verranno aggiunti un numero variabile di punti"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="330dp"
+        android:src="@drawable/telefono_shake" />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:lineHeight="18dp"
+        android:text="Elimina un riga di caramelle costo 1 moneta"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="265dp"
+        android:src="@drawable/orizzontale"/>
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:lineHeight="18dp"
+        android:text="Elimina una colonna di caramelle costo 1 moneta"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="155dp"
+        android:layout_marginStart="265dp"
+        android:src="@drawable/verticale"/>
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="210dp"
+        android:gravity="center"
+        android:lineHeight="18dp"
+        android:text="Aggiunge 3 mosse al costo di 1 moneta"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/TitoloBoost"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="270dp"
+        android:src="@drawable/piumosse"/>
+    <Button
+        android:id="@+id/bottoneIndietroIstruzioni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="620dp"
+        android:background="@drawable/round"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Indietro"
+        android:textColor="@color/ScrittaMenu"
+        android:textStyle="bold" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ManoIstruzioni"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="610dp"
+        android:src="@drawable/mano_destra" />
+
+
+</RelativeLayout>

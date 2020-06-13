@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondosistemato"
+    android:theme="@android:style/Theme.Dialog"
+    tools:context=".Vittoria">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:id="@+id/Numerolivello"
+            android:text="Livello 1"
+            android:textStyle="bold"
+            android:textSize="40dp"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/PrimaStella"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:rotation="-20"
+           android:layout_marginStart="50dp"
+            android:layout_marginTop="90dp"
+            android:layout_below="@id/Numerolivello"
+            />
+
+        <ImageView
+            android:id="@+id/SecondaStella"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="120dp"
+            android:layout_below="@id/Numerolivello"/>
+
+        <ImageView
+            android:id="@+id/TerzaStella"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:rotation="20"
+            android:layout_marginTop="90dp"
+           android:layout_toRightOf="@id/SecondaStella"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/Numerolivello" />
+
+        <TextView
+            android:id="@+id/TitoloPunteggio"
+            android:layout_below="@id/SecondaStella"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Punteggio"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/caduracar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cadutacaramelle" />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@id/caduracar"
+            android:id="@+id/lucette2"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/lucette" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/lucette1"
+            android:layout_marginTop="200dp"
+            android:rotation="-20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/lucette" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/lucette3"
+            android:layout_marginTop="200dp"
+            android:rotation="20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="220dp"
+            android:src="@drawable/lucette" />
+
+        <TextView
+            android:id="@+id/puntiVittoria"
+            android:layout_width="wrap_content"
+            android:text="35"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:textColor="#000"
+            android:layout_below="@+id/TitoloPunteggio"
+            android:layout_height="wrap_content" />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@id/TitoloPunteggio"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/mani" />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@id/Numerolivello"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="270dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ominofesteggia" />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@id/Numerolivello"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/trombetta" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Nsoldi"
+    android:layout_below="@id/TitoloPunteggio"
+    android:textColor="@color/black"
+    android:layout_marginTop="180dp"
+    android:layout_marginStart="140dp"
+    android:text="+ 3"
+    android:textSize="30dp"
+    android:textStyle="bold"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@id/TitoloPunteggio"
+            android:layout_width="70dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="167dp"
+            android:layout_height="70dp"
+            android:src="@drawable/moneta" />
+
+        <Button
+            android:id="@+id/Rigioca"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="70dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/puntiVittoria"
+            android:text="Rigioca"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/ScrittaMenu"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/round"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/Successivo"
+            android:layout_marginTop="170dp"
+            android:layout_below="@id/puntiVittoria"
+            android:layout_marginStart="200dp"
+            android:text="Avanti"
+            android:textStyle="bold"
+            android:textColor="@color/ScrittaMenu"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
